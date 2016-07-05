@@ -1,0 +1,28 @@
+{
+  "name": "time-converter",
+  "version": "0.0.0",
+  "description": "Convert time from Harvest to the Paychex TIME0002 format",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "dateformat": "^1.0.12",
+    "datejs": "0.0.2",
+    "harvest": "^0.1.5",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spidasoftware/time-harvester.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spidasoftware/time-converter/issues"
+  },
+  "homepage": "https://github.com/spidasoftware/time-converter"
+}
