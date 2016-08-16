@@ -6,6 +6,7 @@ var async = require('async');
 require('datejs');
 
 var combine = require('./lib/combine');
+var toTime = require('./lib/to-time');
 
 var harvest = new Harvest({
   subdomain: process.env.HARVEST_SUBDOMAIN,
@@ -75,21 +76,6 @@ var entriesByUser = function(person, callback) {
   });
 }
 
-var convertArraytoTIME = function(lineArray){
-  var line = "";
-  //Employee number is the first 6 characters
-  line += ("      " + lineArray[0]).slice(-6);
-  //The fields we do not use and are the next 44 characters
-  line += new Array(45).join( " " );
-  line += lineArray[1]; //D or E
-  line += ("  " + lineArray[2]).slice(-2); //Earn Code
-  line += new Array(10).join( " " ); // Rate
-  line += ("        " + lineArray[3]).slice(-8); //Hours
-  line += new Array(13).join( " " ); // Next 5 date fields
-  line += ("        " + lineArray[4]).slice(-9); //Amount
-  return line;
-}
-
 
 ExpenseCategories.list({}, function(err, expenseCategories) {
 
@@ -105,7 +91,7 @@ ExpenseCategories.list({}, function(err, expenseCategories) {
         //Process them into the format with the specific space seperated:
         //Employee Number, Override Department Number, D or E, Earning or Deduction Code, Override Rate, Hours, Amount
         _.each(combine(allTimeEntries, allUsers), function(timeEntry) {
-            fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', convertArraytoTIME(timeEntry) + "\n");
+            fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', toTime(timeEntry) + "\n");
         })
 
         //Process all the expenses that were retrieved
@@ -126,7 +112,7 @@ ExpenseCategories.list({}, function(err, expenseCategories) {
               lineToWrite.push("R1");
               lineToWrite.push("") //hours
               lineToWrite.push(expense.expense.total_cost) //Amount
-              fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', convertArraytoTIME(lineToWrite) + "\n");
+              fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', toTime(lineToWrite) + "\n");
             }
           }
         });
