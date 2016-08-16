@@ -5,6 +5,8 @@ var fs = require('fs');
 var async = require('async');
 require('datejs');
 
+var combine = require('./lib/combine');
+
 var harvest = new Harvest({
   subdomain: process.env.HARVEST_SUBDOMAIN,
   email: process.env.HARVEST_EMAIL,
@@ -100,29 +102,10 @@ ExpenseCategories.list({}, function(err, expenseCategories) {
       if (err) {
         console.error("error");
       } else {
-        //Process them into the format with the tab seperated:
+        //Process them into the format with the specific space seperated:
         //Employee Number, Override Department Number, D or E, Earning or Deduction Code, Override Rate, Hours, Amount
-        _.each(allTimeEntries, function(timeEntry) {
-
-          if (!timeEntry.day_entry.is_closed) {
-            console.error("" + allUsers[timeEntry.day_entry.user_id] + " has unapproved time")
-          }
-          var employeeId = employeeIdMap[timeEntry.day_entry.user_id];
-
-          if (employeeId) {
-
-            var lineToWrite = [employeeId];
-            var taskId = taskIdMap[timeEntry.day_entry.task_id];
-            lineToWrite.push("E"); //D or E
-            if (taskId) {
-              lineToWrite.push(taskId);
-            } else {
-              lineToWrite.push("1");
-            }
-            lineToWrite.push(timeEntry.day_entry.hours) //hours
-            lineToWrite.push("") //Amount
-            fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', convertArraytoTIME(lineToWrite) + "\n");
-          }
+        _.each(combine(allTimeEntries, allUsers), function(timeEntry) {
+            fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', convertArraytoTIME(timeEntry) + "\n");
         })
 
         //Process all the expenses that were retrieved
