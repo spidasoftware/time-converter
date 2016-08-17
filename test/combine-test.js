@@ -11,8 +11,6 @@ describe('combine', function() {
 
       var combined = combine(allTimeEntries);
 
-      console.log(combined);
-
       assert.equal(26, combined.length, "should have correct number of entries");
 
     });

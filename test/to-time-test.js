@@ -9,6 +9,7 @@ describe('toTime', function() {
       var time = toTime([ '226', 'E', '1', 42.58999999999999, '' ]);
 
       assert.equal(-1, time.indexOf("42.5899999"), "should not have too many decimal places");
+      assert.ok(time.indexOf("42.5")>1, "should round the value nearest 0.25");
 
     });
   });
