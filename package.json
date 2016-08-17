@@ -11,7 +11,8 @@
     "lodash": "^4.13.1"
   },
   "devDependencies": {
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "nodemailer": "^2.5.0"
   },
   "scripts": {
     "start": "node index.js",

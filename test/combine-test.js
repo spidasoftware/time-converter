@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    combine = require('../lib/combine'),
+    Combine = require('../lib/combine'),
     _ = require('lodash'),
     fs = require('fs');
 
@@ -9,9 +9,21 @@ describe('combine', function() {
   describe('time', function() {
     it('should return one entry per code combination', function() {
 
-      var combined = combine(allTimeEntries);
+      var employeeIdMap = {}
+      _.each(allTimeEntries, function(timeEntry){
+        employeeIdMap[timeEntry.day_entry.user_id]=timeEntry.day_entry.user_id
+      })
 
-      assert.equal(26, combined.length, "should have correct number of entries");
+      var taskIdMap = {}
+      taskIdMap[allTimeEntries[0].day_entry.task_id]="V"
+      taskIdMap[allTimeEntries[1].day_entry.task_id]="S"
+      taskIdMap[allTimeEntries[2].day_entry.task_id]="H"
+
+      var combine = new Combine(employeeIdMap, taskIdMap)
+      var combined = combine.process(allTimeEntries);
+
+      assert.equal(46, combined.length, "should have correct number of entries");
+      assert.ok(!_.find(combined, function(entry){entry[3]>40}), "should not have anything over 40")
 
     });
   });

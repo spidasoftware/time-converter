@@ -5,22 +5,29 @@ var fs = require('fs');
 var async = require('async');
 require('datejs');
 
-var combine = require('./lib/combine');
-var toTime = require('./lib/to-time');
-
 var harvest = new Harvest({
   subdomain: process.env.HARVEST_SUBDOMAIN,
   email: process.env.HARVEST_EMAIL,
   password: process.env.HARVEST_PASSWORD
 })
 
-var employeeIdMap = JSON.parse(fs.readFileSync("employeeIdMap.json"));
-var taskIdMap = JSON.parse(fs.readFileSync("taskIdMap.json"));
-
 var TimeTracking = harvest.TimeTracking;
 var Reports = harvest.Reports;
 var People = harvest.People;
 var ExpenseCategories = harvest.ExpenseCategories;
+
+var home = process.env.HOME || process.env.USERPROFILE;
+var employeeIdMap = JSON.parse(fs.readFileSync(home+"/.timeConvert/employeeIdMap.json"));
+var taskIdMap = JSON.parse(fs.readFileSync(home+"/.timeConvert/taskIdMap.json"));
+var emailConfig = JSON.parse(fs.readFileSync(home+"/.timeConvert/emailConfig.json"));
+
+var toTime = require('./lib/to-time');
+var mail = require('./lib/mail');
+
+var Combine = require('./lib/combine');
+var Reimburse = require('./lib/reimburse');
+var combine = new Combine(employeeIdMap, taskIdMap);
+var reimbuse = new Reimburse(employeeIdMap);
 
 var curr = new Date; // get current date
 var first = curr.getDate() - curr.getDay() - 6; // First day is the day of the month - the day of the week
@@ -90,32 +97,20 @@ ExpenseCategories.list({}, function(err, expenseCategories) {
       } else {
         //Process them into the format with the specific space seperated:
         //Employee Number, Override Department Number, D or E, Earning or Deduction Code, Override Rate, Hours, Amount
-        _.each(combine(allTimeEntries, allUsers), function(timeEntry) {
-            fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', toTime(timeEntry) + "\n");
+        let report = 'reports/TIME0002-' + firstday + "-" + lastday + '.txt';
+
+        fs.writeFileSync(report,"");
+
+        _.each(combine.process(allTimeEntries, allUsers), function(timeEntry) {
+            fs.appendFileSync(report, toTime(timeEntry) + "\n");
         })
 
         //Process all the expenses that were retrieved
-        _.each(allExpenses, function(expense) {
-          if (!expense.expense.is_closed) {
-            console.error("" + allUsers[expense.expense.user_id] + " has unapproved expense")
-          }
-          var employeeId = employeeIdMap[expense.expense.user_id];
-
-          if (employeeId) {
-
-            var lineToWrite = [employeeId];
-            var reimbursible = _.find(expenseCategories, function(expenseCategory){
-              return expenseCategory.expense_category.name.indexOf("Reimbursable")>=0 && expenseCategory.expense_category.id==expense.expense.expense_category_id
-            });
-            if(reimbursible){
-              lineToWrite.push("D"); //D or E
-              lineToWrite.push("R1");
-              lineToWrite.push("") //hours
-              lineToWrite.push(expense.expense.total_cost) //Amount
-              fs.appendFileSync('reports/TIME0002-' + firstday + "-" + lastday + '.txt', toTime(lineToWrite) + "\n");
-            }
-          }
+        _.each(reimbuse.process(allExpenses, expenseCategories, allUsers), function(expense) {
+            fs.appendFileSync(report, toTime(lineToWrite) + "\n");
         });
+
+        mail(emailConfig, report);
       }
     });
   });

@@ -1,0 +1,9 @@
+{
+    "transport": "smtps://user%40gmail.com:pass@smtp.gmail.com",
+    "mailOptions": {
+        "from": "\"Fred Foo\" <foo@blurdybloop.com>",
+        "to": "bar@blurdybloop.com",
+        "subject": "Weekly Time Report",
+        "text": "Weekly Time Report"
+    }
+}

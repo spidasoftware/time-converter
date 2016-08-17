@@ -1,0 +1,232 @@
+[{
+    "expense": {
+        "id": 11939659,
+        "total_cost": 10.15,
+        "units": 1,
+        "created_at": "2016-08-15T13:23:55Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378285,
+        "user_id": 1328459,
+        "spent_at": "2016-08-10",
+        "is_closed": true,
+        "notes": "Meal on way to TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939659/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939677,
+        "total_cost": 91.57,
+        "units": 1,
+        "created_at": "2016-08-15T13:25:41Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199286,
+        "expense_category_id": 3378276,
+        "user_id": 1328459,
+        "spent_at": "2016-08-10",
+        "is_closed": true,
+        "notes": "Bought drinks for folks from Futura, Partner, and Davey Resource group (they bought my dinner for the night).",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939677/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939689,
+        "total_cost": 25.75,
+        "units": 1,
+        "created_at": "2016-08-15T13:26:39Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378297,
+        "user_id": 1328459,
+        "spent_at": "2016-08-10",
+        "is_closed": true,
+        "notes": "Gas for rental - TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939689/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939700,
+        "total_cost": 2.14,
+        "units": 1,
+        "created_at": "2016-08-15T13:27:38Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199236,
+        "expense_category_id": 3378273,
+        "user_id": 1328459,
+        "spent_at": "2016-08-11",
+        "is_closed": true,
+        "notes": "Amber's Google Storage limit to 100 MB monthly fee",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939700/receipt.pdf",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939712,
+        "total_cost": 100.33,
+        "units": 1,
+        "created_at": "2016-08-15T13:28:15Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378295,
+        "user_id": 1328459,
+        "spent_at": "2016-08-12",
+        "is_closed": true,
+        "notes": "Rental for  TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939712/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939722,
+        "total_cost": 151.25,
+        "units": 1,
+        "created_at": "2016-08-15T13:29:01Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378283,
+        "user_id": 1328459,
+        "spent_at": "2016-08-12",
+        "is_closed": true,
+        "notes": "Hotel for TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939722/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939729,
+        "total_cost": 9.3,
+        "units": 1,
+        "created_at": "2016-08-15T13:29:42Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378285,
+        "user_id": 1328459,
+        "spent_at": "2016-08-12",
+        "is_closed": true,
+        "notes": "Meal on way back from TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939729/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939736,
+        "total_cost": 22.06,
+        "units": 1,
+        "created_at": "2016-08-15T13:30:20Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378297,
+        "user_id": 1328459,
+        "spent_at": "2016-08-12",
+        "is_closed": true,
+        "notes": "Gas for rental - TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939736/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939739,
+        "total_cost": 22.92,
+        "units": 1,
+        "created_at": "2016-08-15T13:30:41Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378297,
+        "user_id": 1328459,
+        "spent_at": "2016-08-12",
+        "is_closed": true,
+        "notes": "Gas for rental - TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939739/receipt",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939747,
+        "total_cost": 99,
+        "units": 1,
+        "created_at": "2016-08-15T13:31:21Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199236,
+        "expense_category_id": 3378273,
+        "user_id": 1328459,
+        "spent_at": "2016-08-13",
+        "is_closed": true,
+        "notes": "Monthly fee for online ap for CRM",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939747/receipt.pdf",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}, {
+    "expense": {
+        "id": 11939754,
+        "total_cost": 126.21,
+        "units": 1,
+        "created_at": "2016-08-15T13:31:54Z",
+        "updated_at": "2016-08-17T12:09:01Z",
+        "project_id": 11199348,
+        "expense_category_id": 3378283,
+        "user_id": 1328459,
+        "spent_at": "2016-08-13",
+        "is_closed": true,
+        "notes": "Hotel on way back from TVPPA E&O",
+        "invoice_id": 0,
+        "billable": false,
+        "company_id": 530104,
+        "has_receipt": true,
+        "receipt_url": "https://spidasoftware.harvestapp.com/expenses/11939754/receipt.pdf",
+        "is_locked": true,
+        "locked_reason": "The project is locked for this time period."
+    }
+}]

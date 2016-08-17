@@ -1,0 +1,491 @@
+[{
+    "expense_category": {
+        "id": 3378260,
+        "name": "AMEX - Airfare",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:12:38Z",
+        "updated_at": "2016-06-22T14:12:38Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378263,
+        "name": "AMEX - Auto Maintenance",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:12:53Z",
+        "updated_at": "2016-06-22T14:12:53Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378265,
+        "name": "AMEX - Background/Drug Screens",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:12:57Z",
+        "updated_at": "2016-06-22T14:12:57Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378268,
+        "name": "AMEX - Charity",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:04Z",
+        "updated_at": "2016-06-22T14:13:04Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378269,
+        "name": "AMEX - Company Car - Gas/Car Wash",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:09Z",
+        "updated_at": "2016-06-22T14:13:09Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378270,
+        "name": "AMEX - Conferences",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:13Z",
+        "updated_at": "2016-06-22T14:13:13Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378273,
+        "name": "AMEX - Dues & Subscriptions",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:18Z",
+        "updated_at": "2016-06-22T14:13:18Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378274,
+        "name": "AMEX - Employee Activities",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:23Z",
+        "updated_at": "2016-06-22T14:13:23Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378276,
+        "name": "AMEX - Entertainment - Clients",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:26Z",
+        "updated_at": "2016-06-22T14:13:26Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378277,
+        "name": "AMEX - Field Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:30Z",
+        "updated_at": "2016-06-22T14:13:30Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378278,
+        "name": "AMEX - Internet",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:33Z",
+        "updated_at": "2016-06-22T14:13:33Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378280,
+        "name": "AMEX - IT Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:37Z",
+        "updated_at": "2016-06-22T14:13:37Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378281,
+        "name": "AMEX - Janitorial Services",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:46Z",
+        "updated_at": "2016-06-22T14:13:46Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378282,
+        "name": "AMEX - Licenses and Permits",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:51Z",
+        "updated_at": "2016-06-22T14:13:51Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378283,
+        "name": "AMEX - Lodging",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:55Z",
+        "updated_at": "2016-06-22T14:13:55Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378284,
+        "name": "AMEX - Marketing",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:13:58Z",
+        "updated_at": "2016-06-22T14:13:58Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378285,
+        "name": "Reimbursable AMEX - Meals - SPIDA Employees",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:14:16Z",
+        "updated_at": "2016-06-22T14:14:16Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378292,
+        "name": "AMEX - Office Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:08Z",
+        "updated_at": "2016-06-22T14:15:08Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378293,
+        "name": "AMEX - Postage & Shipping",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:24Z",
+        "updated_at": "2016-06-22T14:15:24Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378294,
+        "name": "AMEX - Printing & Production",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:29Z",
+        "updated_at": "2016-06-22T14:15:29Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378295,
+        "name": "AMEX - Rental Car",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:33Z",
+        "updated_at": "2016-06-22T14:15:33Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378296,
+        "name": "AMEX - Safety Equipment",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:37Z",
+        "updated_at": "2016-06-22T14:15:37Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378297,
+        "name": "AMEX - Taxis/Parking/Tolls/Gas-Rental",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:41Z",
+        "updated_at": "2016-06-22T14:15:41Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378298,
+        "name": "Reimbursable - Airfare",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:15:59Z",
+        "updated_at": "2016-06-22T14:15:59Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378299,
+        "name": "Reimbursable - Auto Maintenance",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:04Z",
+        "updated_at": "2016-06-22T14:16:04Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378300,
+        "name": "Reimbursable - Background/Drug Screens",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:07Z",
+        "updated_at": "2016-06-22T14:16:07Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378301,
+        "name": "Reimbursable - Cell Phone/Pager",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:11Z",
+        "updated_at": "2016-06-22T14:16:11Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378302,
+        "name": "Reimbursable - Charity",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:17Z",
+        "updated_at": "2016-06-22T14:16:17Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378303,
+        "name": "Reimbursable - Company Car - Gas/Car Wash",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:21Z",
+        "updated_at": "2016-06-22T14:16:21Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378304,
+        "name": "Reimbursable - Conferences",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:16:25Z",
+        "updated_at": "2016-06-22T14:16:25Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378305,
+        "name": "Reimbursable - Dues & Subscriptions",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:14Z",
+        "updated_at": "2016-06-22T14:17:14Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378306,
+        "name": "Reimbursable - Employee Activities",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:18Z",
+        "updated_at": "2016-06-22T14:17:18Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378307,
+        "name": "Reimbursable - Entertainment - Clients",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:22Z",
+        "updated_at": "2016-06-22T14:17:22Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378308,
+        "name": "Reimbursable - Field Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:27Z",
+        "updated_at": "2016-06-22T14:17:27Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378309,
+        "name": "Reimbursable - Internet",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:30Z",
+        "updated_at": "2016-06-22T14:17:30Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378310,
+        "name": "Reimbursable - IT Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:36Z",
+        "updated_at": "2016-06-22T14:17:36Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378311,
+        "name": "Reimbursable - Janitorial Services",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:17:41Z",
+        "updated_at": "2016-06-22T14:17:41Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378318,
+        "name": "Reimbursable - Licenses and Permits",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:17Z",
+        "updated_at": "2016-06-22T14:18:17Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378319,
+        "name": "Reimbursable - Lodging",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:21Z",
+        "updated_at": "2016-06-22T14:18:21Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378320,
+        "name": "Reimbursable - Marketing",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:25Z",
+        "updated_at": "2016-06-22T14:18:25Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378321,
+        "name": "Reimbursable - Meals - SPIDA Employees",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:28Z",
+        "updated_at": "2016-06-22T14:18:28Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378322,
+        "name": "Reimbursable - Mileage",
+        "unit_name": "mile",
+        "unit_price": 0.45,
+        "created_at": "2016-06-22T14:18:40Z",
+        "updated_at": "2016-06-22T14:18:40Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378323,
+        "name": "Reimbursable - Office Supplies",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:45Z",
+        "updated_at": "2016-06-22T14:18:45Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378324,
+        "name": "Reimbursable - Per Diem",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:18:49Z",
+        "updated_at": "2016-06-22T14:18:49Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378331,
+        "name": "Reimbursable - Postage & Shipping",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:20:07Z",
+        "updated_at": "2016-06-22T14:20:07Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378332,
+        "name": "Reimbursable - Printing & Production",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:20:10Z",
+        "updated_at": "2016-06-22T14:20:10Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378333,
+        "name": "Reimbursable - Rental Car",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:20:13Z",
+        "updated_at": "2016-06-22T14:20:13Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378334,
+        "name": "Reimbursable - Safety Equipment",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:20:16Z",
+        "updated_at": "2016-06-22T14:20:16Z",
+        "deactivated": false
+    }
+}, {
+    "expense_category": {
+        "id": 3378335,
+        "name": "Reimbursable - Taxis/Parking/Tolls/Gas-Rental",
+        "unit_name": null,
+        "unit_price": null,
+        "created_at": "2016-06-22T14:20:20Z",
+        "updated_at": "2016-06-22T14:20:20Z",
+        "deactivated": false
+    }
+}]
