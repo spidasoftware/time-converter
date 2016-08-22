@@ -30,8 +30,6 @@ converter.fromFile("./reports/time2.csv",function(err,results){
 
   timeEntries= _.sortBy(timeEntries, function(te) { return te[0]; });
 
-  console.log(JSON.stringify(timeEntries));
-
   let report = 'reports/TIME0002.txt';
 
   fs.writeFileSync(report,"");
