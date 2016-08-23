@@ -38,7 +38,7 @@ var firstday
 if (Date.today().is().monday()) {
   firstday = dateFormat(Date.last().monday().add(-7).days(), "yyyymmdd");
 }else{
-  firstday = dateFormat(Date.last().monday().add(-21).days(), "yyyymmdd");
+  firstday = dateFormat(Date.last().monday().add(-14).days(), "yyyymmdd");
 }
 var lastday = dateFormat(Date.last().sunday(), "yyyymmdd");
 

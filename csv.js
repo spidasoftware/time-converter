@@ -1,4 +1,9 @@
-//Converter Class
+//Reads a file 'time.csv' in the reports directory and converts to TIME0002 format
+//Required headers:  PAYCHEX ID, Regular Hours, Over Time, Vacation, Sick, Holiday
+//
+// run with 'node csv.js'
+
+
 var Converter = require("csvtojson").Converter,
   _ = require('lodash'),
   fs = require('fs'),
@@ -6,7 +11,7 @@ var Converter = require("csvtojson").Converter,
 
 var converter = new Converter({});
 
-converter.fromFile("./reports/time2.csv",function(err,results){
+converter.fromFile("./reports/time.csv",function(err,results){
 
 
   var timeEntries = _.reduce(results, function(converted, timeEntry){
