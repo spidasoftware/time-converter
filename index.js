@@ -107,7 +107,7 @@ ExpenseCategories.list({}, function(err, expenseCategories) {
 
         //Process all the expenses that were retrieved
         _.each(reimbuse.process(allExpenses, expenseCategories, allUsers), function(expense) {
-            fs.appendFileSync(report, toTime(lineToWrite) + "\n");
+            fs.appendFileSync(report, toTime(expense) + "\n");
         });
 
         mail(emailConfig, report);
