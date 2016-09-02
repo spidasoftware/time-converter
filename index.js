@@ -40,14 +40,15 @@ var week2 = [middleStart, lastday];
 
 weekly(week1[0], week1[1], getReport(week1), function(){
   weekly(week2[0], week2[1], getReport(week2), function(){
+
     var report0 = fs.readFileSync(getReport(week1)).toString();
     var report1 = fs.readFileSync(getReport(week2)).toString();
 
     var completeReport = "./reports/TIME0002.txt";
     var allLines = biWeekly(report0, report1);
 
-    _.each(allLines, function(line){
-      fs.writeFileSync(completeReport, "");
+    fs.writeFileSync(completeReport, "");
+    _.each(_.sortBy(allLines, function(l){return Number(l[0])} ), function(line){
       fs.appendFileSync(completeReport, toTime(line) + "\n");
     });
 

@@ -16,7 +16,6 @@ describe('bi-weekly', function() {
       assert.ok(!_.find(allLines, function(entry){
         return entry[3]>10 && entry[2]=="2";
       }), "should not have anything over 10")
-      assert.equal(46, allLines.length, "should have correct number of entries");
       assert.ok(!_.find(allLines, function(entry){ return entry[3]>80}), "should not have anything over 80")
 
     });
