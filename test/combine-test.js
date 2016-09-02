@@ -22,7 +22,7 @@ describe('combine', function() {
       var combine = new Combine(employeeIdMap, taskIdMap)
       var combined = combine.process(allTimeEntries);
 
-      assert.equal(37, combined.length, "should have correct number of entries");
+      assert.equal(46, combined.length, "should have correct number of entries");
       assert.ok(!_.find(combined, function(entry){entry[3]>40}), "should not have anything over 40")
 
     });
