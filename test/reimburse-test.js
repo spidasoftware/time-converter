@@ -19,7 +19,9 @@ describe('reimburse', function() {
 
       var reimbursed = reimburse.process(allExpenses, expenseCategories);
 
-      assert.equal(2, reimbursed.length, "should have correct number of entries");
+      assert.equal(1, reimbursed.length, "should have correct number of entries");
+      console.log(reimbursed[0][4].toFixed(2))
+      assert.equal((9.3+10.15).toFixed(2), reimbursed[0][4].toFixed(2), "should have summed the cost");
 
     });
   });
