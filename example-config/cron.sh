@@ -9,6 +9,11 @@
 # Modify the following paths if needed.
 #
 source $HOME/.bash_profile
-pushd $HOME/time-converter
-  npm start
-popd
+
+WEEK=`date +\%W`
+WEEK=$(($WEEK % 2))
+if [ $WEEK -eq 0 ]; then
+  pushd $HOME/time-converter
+    npm start
+  popd
+fi
