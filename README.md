@@ -9,4 +9,11 @@ Convert harvest time report to Paychex TIME0002 import format
     1. taskIdMap is a mapping of "special" tasks that need to have specific codes in paychex.  An example would be the task in harvest that is vacation, this usually needs recorded to be deducted from the correct bucket of hours.
     1. email config to send the report to who needs it after is is run
 
-# run
+# Run
+
+  - `npm start` will run the conversion and send the report
+  - `node reminder` will send a reminder email to the "reminderEmail" that is specified in the emailConfig.  This is useful if you want to have also add a cron reminder email to be sent prior to the report being generated.
+
+# New Employee
+
+Generally what you have to do for on/off boarding of employees is add the harvest id and paychex id to the employeeIdMap.json file. 

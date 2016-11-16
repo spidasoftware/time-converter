@@ -1,6 +1,7 @@
 {
     "transport": "smtps://user%40gmail.com:pass@smtp.gmail.com",
     "mailOptions": {
+        "reminderEmail":"group@company.com",
         "from": "\"Fred Foo\" <foo@blurdybloop.com>",
         "to": "bar@blurdybloop.com",
         "subject": "Weekly Time Report",
