@@ -10,6 +10,7 @@ var transporter = nodemailer.createTransport(config.transport);
 
 let mailOptions = config.mailOptions;
 mailOptions.text = fs.readFileSync("./reminder.txt");
+mailOptions.to = mailOptions.reminderEmail;
 
 // send mail with defined transport object
 transporter.sendMail(mailOptions, function(error, info){
